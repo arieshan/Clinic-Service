@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<treatmentRepresentation xmlns:ns2="http://cs548.stevens.edu/clinic/service/web/rest/data">
+    <ns2:id url="http://ec2-184-72-126-189.compute-1.amazonaws.com:8080/clinic-rest/resources/treatment/92276" relation="http://cs548.stevens.edu/clinic/rest/relations/treatment" mediaType="application/xml"/>
+    <ns2:patient url="http://ec2-184-72-126-189.compute-1.amazonaws.com:8080/clinic-rest/resources/patient/1251" relation="http://cs548.stevens.edu/clinic/rest/relations/patient" mediaType="application/xml"/>
+    <ns2:provider url="http://ec2-184-72-126-189.compute-1.amazonaws.com:8080/clinic-rest/resources/provider/1253" relation="http://cs548.stevens.edu/clinic/rest/relations/provider" mediaType="application/xml"/>
+    <ns2:diagnosis>Drug A9999 Diagnosis final!!!</ns2:diagnosis>
+    <ns2:drug-treatment>
+        <ns2:drugName>drug A9999 name final!!!</ns2:drugName>
+        <ns2:dosage>2.999</ns2:dosage>
+    </ns2:drug-treatment>
+    <repFactory/>
+    <treatmentDtoFactory/>
+</treatmentRepresentation>

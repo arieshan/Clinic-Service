@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinic xmlns="http://cs548.stevens.edu/clinic/db"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://cs548.stevens.edu/clinic/db file:/Users/amzxiao/Desktop/A3/Assignment3-Xquery%20(1).xsd">
+    <patient xmlns="">
+        <patient-id>-1073741773</patient-id>
+        <name>Sunny Bruke</name>
+        <treatment>
+            <id>-2279761234</id>
+            <diagnosis>Diagnosis 000001</diagnosis>
+            <drug>drug-999-2324-111</drug>
+            <provider>
+                <npi>010-234-9999</npi>
+                <name>provider Great number 1</name>
+            </provider>
+        </treatment>
+        <treatment>
+            <id>-2013244923</id>
+            <diagnosis>Diagnosis 882000</diagnosis>
+            <drug>drug-022-124-124</drug>
+            <provider>
+                <npi>808-343-1214</npi>
+                <name>Provider Great numer 2</name>
+            </provider>
+        </treatment>
+    </patient>
+    <patient xmlns="">
+        <patient-id>-107879324</patient-id>
+        <name>name3</name>
+        <treatment>
+            <id>-2274771763</id>
+            <diagnosis>diagnosis 03552</diagnosis>
+            <drug>drug-931-1414-1241</drug>
+            <provider>
+                <npi>979-12415-1214</npi>
+                <name>Provider Great 999</name>
+            </provider>
+        </treatment>
+        <treatment>
+            <id>-2315150017</id>
+            <diagnosis>diagnosis 232526</diagnosis>
+            <drug>drug-3252-234-234</drug>
+            <provider>
+                <npi>345-2526-2626</npi>
+                <name>Provider Great 888</name>
+            </provider>
+        </treatment>
+    </patient>
+</clinic>

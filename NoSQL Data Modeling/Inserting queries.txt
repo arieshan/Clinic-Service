@@ -1,0 +1,20 @@
+INSERT INTO cs548.patient(patientId,id,pname,dob) VALUES (1,now(),'Patient0','2018-12-01');
+INSERT INTO cs548.patient(patientId,id,pname,dob) VALUES (2,now(),'Patient1','2018-12-02');
+INSERT INTO cs548.patient(patientId,id,pname,dob) VALUES (3,now(),'Patient2','2018-12-03');
+INSERT INTO cs548.patient(patientId,id,pname,dob) VALUES (4,now(),'Patient3','2018-12-04');
+
+INSERT INTO cs548.provider(id,name,NPI,specialization)VALUES (now(),'Provider1',1,'drugTreatment');
+INSERT INTO cs548.provider(id,name,NPI,specialization)VALUES (now(),'Provider2',2,'surgery');
+INSERT INTO cs548.provider(id,name,NPI,specialization)VALUES (now(),'Provider3',3,'radiology');
+
+INSERT INTO cs548.patientTreatment(id,year,diagnosis,dTreatment,drugTreatment, surgery, radiology,patientId,NPI,pname,dob)
+VALUES (now(),2018,'Diagnosis txt1','2018-12-07',{drug:'Drug', dosage:5},null,null,1,1,'Patient0','2018-12-01');
+
+INSERT INTO cs548.providerTreatment(id,year,diagnosis,dTreatment,drugTreatment, surgery, radiology,patientId,NPI,name,specialization)
+VALUES (now(),2018,'Diagnosis txt1','2018-12-07',{drug:'drug', dosage:18},null,null,1,1,'Provider1','DrugTreatment');
+
+INSERT INTO cs548.patientTreatment(id,year,diagnosis,dTreatment,drugTreatment, surgery, radiology,patientId,NPI,pname,dob)
+VALUES (now(),2018,'No Treatment','2018-12-07',null,{form: 'From1',date: '2018-12-07'},null,3,3,'Patient2', '2018-12-03');
+
+INSERT INTO cs548.providerTreatment(id,year,diagnosis,dTreatment,drugTreatment, surgery, radiology, patientId,NPI,name,specialization)
+VALUES (now(),2018,'No need treatment','2018-12-07',null,{form: 'From1',date: '2018-12-07'},null,3,3,'Provider3','Surgery');

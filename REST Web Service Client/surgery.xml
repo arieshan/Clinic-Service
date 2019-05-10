@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<treatmentRepresentation xmlns:ns2="http://cs548.stevens.edu/clinic/service/web/rest/data">
+    <ns2:id url="http://ec2-54-87-2-150.compute-1.amazonaws.com:8080/clinic-rest/resources/treatment/927" relation="http://cs548.stevens.edu/clinic/rest/relations/treatment" mediaType="application/xml"/>
+    <ns2:patient url="http://ec2-54-87-2-150.compute-1.amazonaws.com:8080/clinic-rest/resources/patient/1251" relation="http://cs548.stevens.edu/clinic/rest/relations/patient" mediaType="application/xml"/>
+    <ns2:provider url="http://ec2-54-87-2-150.compute-1.amazonaws.com:8080/clinic-rest/resources/provider/1253" relation="http://cs548.stevens.edu/clinic/rest/relations/provider" mediaType="application/xml"/>
+    <ns2:diagnosis>Final Surgery for patient and provider </ns2:diagnosis>
+    <ns2:surgery>
+        <ns2:date>2014-08-04Z</ns2:date>
+    </ns2:surgery>
+    <repFactory/>
+    <treatmentDtoFactory/>
+</treatmentRepresentation>

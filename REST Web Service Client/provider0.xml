@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<providerRepresentation xmlns:ns2="http://cs548.stevens.edu/clinic/service/web/rest/data">
+	<ns2:id mediaType="application/xml" relation="http://cs548.stevens.edu/clinic/rest/relations/providerLinks to an external site." url="http://ec2-54-87-2-150.compute-1.amazonaws.com:8080/clinic-rest/resources/provider/1553"/>
+    <ns2:npi>92386</ns2:npi>
+    <ns2:name>Final Provider 2222 REST</ns2:name>
+    <ns2:spec>surgery</ns2:spec>
+    <providerDtoFactory/>
+</providerRepresentation>

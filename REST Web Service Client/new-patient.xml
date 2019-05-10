@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<patientRepresentation xmlns:ns2="http://cs548.stevens.edu/clinic/service/web/rest/data">
+    <ns2:patient-id>37890</ns2:patient-id>
+    <ns2:name>Final Test PATIENT Rest</ns2:name>
+    <patientDtoFactory/>
+</patientRepresentation>

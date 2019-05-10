@@ -1,0 +1,62 @@
+create keyspace cs548 with replication = {'class':'SimpleStrategy', 'replication_factor':1};
+use cs548;
+
+
+CREATE TABLE patient(
+patientId int,
+id UUID,
+pname text,
+dob date,
+primary key(patientId));
+
+
+CREATE TABLE provider(
+id UUID,
+name text,
+NPI int,
+specialization text,
+primary key(NPI));
+
+
+CREATE TYPE drug (
+  drug text,
+  dosage float
+);
+CREATE TYPE radiology (
+  dates list<date>
+);
+CREATE TYPE surgery(
+  form text,
+  date date);
+
+
+CREATE TABLE patientTreatment(
+id UUID,
+year bigint,
+diagnosis text,
+dTreatment date,
+drugTreatment frozen<drug>,
+surgery frozen<surgery>,
+radiology frozen<radiology>,
+patientId int,
+NPI int,
+pname text,
+dob date,
+primary key((id,patientId),dTreatment)
+)with clustering order by (dTreatment desc);
+
+
+CREATE TABLE providerTreatment(
+id UUID,
+year bigint,
+diagnosis text,
+dTreatment date,
+drugtreatment frozen<drug>,
+radiology frozen<radiology>,
+surgery frozen<surgery>,
+patientId int,
+NPI int,
+name text,
+specialization text,
+primary key((id, NPI),dTreatment)
+)with clustering order by (dTreatment desc);
